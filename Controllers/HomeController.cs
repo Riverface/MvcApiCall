@@ -12,7 +12,7 @@ namespace MvcApiCall.Controllers
     {
         public IActionResult Index()
         {
-            List<Article> allArticles = Article.GetArticles("BXjGG7wWhdATCF5wGBWVlAN2elpL6ifp");
+            List<Article> allArticles = Article.GetArticles(EnvironmentVariables.ApiKey);
             return View(allArticles);
         }
     }
